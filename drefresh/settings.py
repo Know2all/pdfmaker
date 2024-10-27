@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-tkdkd8s!@fp9n+np$#0^*^58bm%7b2vir--$a(-a8@)#nd4k$n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pdfmaker-h834.onrender.com']
 
 
 # Application definition
