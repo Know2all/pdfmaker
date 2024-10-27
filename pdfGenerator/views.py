@@ -13,7 +13,7 @@ async def test(request):
     return JsonResponse({'status':'ok','alarm':alarm})
 
 async def generate_pdf_base64(url):
-    browser = await launch(headless=True,executablePath='C:/Program Files/Google/Chrome/Application/chrome.exe')
+    browser = await launch(headless=True)
     page = await browser.newPage()
     await page.goto(url, {'waitUntil': 'networkidle2'})
 
