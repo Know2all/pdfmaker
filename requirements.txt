@@ -1,4 +1,5 @@
 gunicorn
+daphne
 django
 pyppeteer
 websockets
