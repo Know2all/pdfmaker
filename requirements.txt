@@ -2,3 +2,4 @@ uvicorn
 django
 pyppeteer
 websockets
+django-cors-headers
