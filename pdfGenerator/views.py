@@ -5,7 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from pyppeteer import launch
 
 async def clock():
-    await asyncio.sleep(20)
+    await asyncio.sleep(5)
     return "alarmed"
 
 async def test(request):
