@@ -5,7 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 from pyppeteer import launch
 
 async def clock():
-    await asyncio.sleep(20)
+    await asyncio.sleep(5)
     return "alarmed"
 
 async def test(request):
@@ -13,7 +13,7 @@ async def test(request):
     return JsonResponse({'status':'ok','alarm':alarm})
 
 async def generate_pdf_base64(url):
-    browser = await launch(headless=True,executablePath='C:/Program Files/Google/Chrome/Application/chrome.exe')
+    browser = await launch(headless=True)
     page = await browser.newPage()
     await page.goto(url, {'waitUntil': 'networkidle2'})
 
